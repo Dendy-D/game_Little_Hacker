@@ -1,0 +1,51 @@
+body {
+  /* background-image: url('../images/fon7.jpg'); */
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  min-height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.cover {
+  background: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dopImg {
+  width: 300px;
+  height: 500px;
+  border: 2px solid white;
+  margin-right: 300px;
+}
+
+.container_level_1 {
+  display: flex;
+  /* margin-left: 300px; */
+  color: floralwhite;
+}
+
+.defoltContent_level_1 {
+  position: absolute;
+  z-index: 2;
+  left: 500px;
+  top: 50px;
+  text-align: center;
+}
+
+input {
+  color: black;
+  font-size: 25px;
+}
+
+.defoltContent_level_1 p {
+  font-size: 22px;
+  width: 800px;
+  margin-bottom: 150px;
+}

@@ -1,0 +1,41 @@
+body {
+  background-image: url('../images/fon3.jpg');
+  background-position: center center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: black;
+  min-height: 100vh;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container_For_Levels {
+  min-height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.row1, .row3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.level {
+  width: 100px;
+  height: 100px;
+  /* background-color:red; */
+  border: 2px solid floralwhite;
+  cursor: pointer;
+  color: floralwhite;
+  text-align: center;
+  font-size: bold;
+  font-size: 18px;
+}
