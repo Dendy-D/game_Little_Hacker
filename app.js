@@ -1,10 +1,21 @@
+
 document.addEventListener('mousedown', function (event) {
   event.preventDefault();
 });
 
+// const levelsTree = {
+//   le
+// }
+
 const textPress = document.getElementById('textPress');
 const buttonClick = document.getElementById('buttonClick');
 const gameStart = document.getElementById('gameStart');
+
+const downloads = document.getElementById('downloads');
+
+// document.addEventListener('DOMContentLoaded', function () {
+
+// })
 
 
 if (gameStart != null) gameStart.addEventListener('click', function () {
@@ -17,7 +28,7 @@ if (gameStart != null) gameStart.addEventListener('click', function () {
     document.getElementById('welcomeText').hidden = false;
 
     const typed = new Typed('#welcomeTextCon', {
-      typeSpeed: 57,
+      typeSpeed: 58,
       // startDelay: 1000,
       strings: [`Где тебя носит Твою Ма..`, `Приветствую тебя агент.
     Я слышал, что ты неплохо разбираешься в WEb-разработке. Мне нужна твоя помощь.
@@ -42,7 +53,7 @@ if (gameStart != null) gameStart.addEventListener('click', function () {
       let a = document.createElement('a');
       a.href = 'levels.html';
       a.click();
-    }, 63000);
+    }, 64000);
 
   }, 500);
 
@@ -58,23 +69,14 @@ const createLink = (id, href) => {
 };
 
 createLink('downloads', 'levels.html');
-createLink('level1', 'level1.html');
+createLink('level0', 'level0.html');
+// createLink('level1', 'level1.html');
 
-// task for level_1
-const input1 = document.getElementById('input_level_1');
-input1.focus();
-
-const password = 'dgh425d637';
-
-input1.addEventListener('keydown', function (event) {
-  if (event.code != "Enter") return;
-
-  if (input1.value == password) {
-    input1.value = '';
-  } else {
-    input1.value = '';
-    createError();
-  }
+const menu_icon = document.getElementById('menu_icon');
+if (menu_icon) menu_icon.addEventListener('click', function () {
+  let a = document.createElement('a');
+  a.href = 'levels.html';
+  a.click();
 })
 
 function createError() {
@@ -83,4 +85,60 @@ function createError() {
   div.innerHTML = 'Данные не корректны';
   document.body.append(div);
   setTimeout(() => div.remove(), 3000);
+  let errorVoice = document.getElementById('error');
+  errorVoice.play();
+}
+
+function createCompliment() {
+  let div = document.createElement('div');
+  div.classList.add('Correct');
+  div.innerHTML = `Успешный ввод пароля. Доступ на ресурс открыт`;
+  document.body.append(div);
+  setTimeout(() => div.remove(), 7000);
+  let correct = document.getElementById('correct');
+  correct.play();
+}
+
+// task for level_0
+{
+  const input0 = document.getElementById('input_level_0');
+  if (input0) input0.focus();
+
+  const password = 'dgh425d637';
+
+  if (input0) input0.addEventListener('keydown', function (event) {
+    if (event.code != "Enter") return;
+
+    if (input0.value == password) {
+      level1 = document.getElementById('level1');
+      if (level1) level1.classList.remove('disable');
+      if (level1) console.log(level1);
+      createCompliment();
+      input0.value = '';
+      const arrowRight = document.getElementById('arrowRight');
+      arrowRight.hidden = false;
+      arrowRight.addEventListener('click', function () {
+        let nextLevel = document.getElementById('nextLevel');
+        nextLevel.play();
+        setTimeout(() => {
+          let a = document.createElement('a');
+          a.href = 'level1.html';
+          a.click();
+        }, 1000);
+      });
+      console.log(1);
+    } else {
+      input0.value = '';
+      createError();
+    }
+  })
+
+}
+
+
+//task for level_1
+{
+
+  // const input0
+
 }

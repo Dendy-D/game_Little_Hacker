@@ -26,11 +26,11 @@ ol[class] {
   list-style: none;
 }
 
-img,
+/* img,
 picture {
   max-width: 100%;
   display: block;
-}
+} */
 
 input,
 button,
@@ -78,4 +78,21 @@ select {
   color: red;
   margin-top: 30px;
   position: absolute;
+}
+
+.Correct {
+  font-size: 40px;
+  color: lime;
+  margin-top: 30px;
+  position: absolute;
+}
+
+.level.disable {
+  border: 2px solid red;
+}
+
+.level.disable:hover {
+  /* border: 3px solid red; */
+  outline: 3px solid red;
+  outline-offset: -3px;
 }
