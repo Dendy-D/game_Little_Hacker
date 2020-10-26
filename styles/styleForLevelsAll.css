@@ -52,3 +52,11 @@ input {
   bottom: 50px;
   cursor: pointer;
 }
+
+.information {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  width: 1000px;
+  margin: 0 auto;
+}

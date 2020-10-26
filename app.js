@@ -7,9 +7,30 @@ document.addEventListener('mousedown', function (event) {
 const textPress = document.getElementById('textPress');
 const buttonClick = document.getElementById('buttonClick');
 const gameStart = document.getElementById('gameStart');
+const levels = document.getElementById('downloads');
+const information = document.getElementById('information');
 
 const downloads = document.getElementById('downloads');
 
+window.addEventListener('load', function () {
+  if (downloads != null) downloads.addEventListener('click', function () {
+    buttonClick.play();
+    setInterval(() => {
+      let a = document.createElement('a');
+      a.href = 'levels.html';
+      a.click();
+    }, 500);
+  });
+
+  if (information != null) information.addEventListener('click', function () {
+    buttonClick.play();
+    setInterval(() => {
+      let a = document.createElement('a');
+      a.href = 'information.html';
+      a.click();
+    }, 500);
+  });
+});
 
 if (gameStart != null) gameStart.addEventListener('click', function () {
   buttonClick.play();
@@ -67,9 +88,8 @@ const createLink = (id, href) => {
   });
 };
 
-createLink('downloads', 'levels.html');
 createLink('level0', 'level0.html');
-// createLink('level1', 'level1.html');
+
 
 const menu_icon = document.getElementById('menu_icon');
 if (menu_icon) menu_icon.addEventListener('click', function () {
