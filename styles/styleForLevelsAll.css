@@ -9,15 +9,19 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-.container_level_1 {
+.container_ {
   display: flex;
   justify-content: center;
   color: floralwhite;
 }
 
-.defoltContent_level_1 {
+.defoltContent_{
   text-align: center;
   margin-top: 50px;
+}
+
+.block_for_password {
+  margin-right: 50px;
 }
 
 input {
@@ -25,8 +29,26 @@ input {
   font-size: 25px;
 }
 
-.defoltContent_level_1 p {
+.defoltContent_ p {
   font-size: 22px;
   width: 800px;
   margin-bottom: 150px;
+}
+
+.menu_icon {
+  width: 50px;
+  height: 50px;
+  position: fixed; 
+  left: 50px; 
+  bottom: 50px;
+  cursor: pointer;
+}
+
+.arrow_right {
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  cursor: pointer;
 }

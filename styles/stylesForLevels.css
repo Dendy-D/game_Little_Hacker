@@ -40,3 +40,9 @@ body {
   font-size: 18px;
 }
 
+.mainMenu {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
+}

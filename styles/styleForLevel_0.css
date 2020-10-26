@@ -31,6 +31,10 @@ input {
   margin-bottom: 150px;
 }
 
+.block_for_password {
+  margin-right: 50px;
+}
+
 .menu_icon {
   width: 50px;
   height: 50px;

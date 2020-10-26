@@ -9,21 +9,20 @@
   <link rel="shortcut icon" href="images/1.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Turret+Road:wght@500&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles/styleForLevel_0.css">
+  <link rel="stylesheet" href="styles/styleForLevelsAll.css">
 </head>
 
 <body>
 
-  <div class="container_level_0">
-    <div class="defoltContent_level_0">
-      <p>Level 0 / Тест на дибила <br>
-        Привет, это твое первое задание. Сразу скажу, оно тестовое!
-        Это чтоб ты потренировался перед серьезными заданиями. И примерно понимал что тебя ждет.
-        В этой тестовой системе я оставил "уязвимость". Найди ее максимально быстро,
-        и отправишься на настоящие задания. Удачи тебе агент!
+  <div class="container_">
+    <div class="defoltContent_">
+      <p>Level 2 / Удачный родитель<br>
+        Ты правда неплох в своем деле Агент. Но ты должен понимать, что это только
+        начало. Дальше больше. Тебя уже ждет следующее задание. Ничего нового.
+        Обходишь защиту. Входишь в систему. Удачи.
       </p>
-      <!-- password: dgh425d637 -->
-      <div class="block_for_password">Введите пароль: <input type="password" id="input_level_0"></div>
+      <div class="block_for_password">Введите пароль: <input type="password" id="input_level_2"></div>
+      <div><input type="password" id="hiddenPassword" hidden></div>
     </div>
   </div>
 
@@ -34,7 +33,7 @@
     <source src="sounds/zvuk-nekorrektnogo-nabora-parolya-4339.mp3">
   </audio>
 
-  <audio id="correct">
+  <audio id="correct">`
     <source src="sounds/zvuk-prohojdeniya-urovnya-4536.mp3">
   </audio>
 
@@ -42,8 +41,8 @@
     <source src="sounds/zvuk-perelistyvaniya-stranicy_[Pro-Sound.org].mp3">
   </audio>
 
-
   <script src="app.js"></script>
+  <script src="level2.js"></script>
 </body>
 
 </html>
